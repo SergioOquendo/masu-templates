@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento HTML generado dinámicamente</title>
+    <style>
+      body {
+        /* width: max-content; */
+      }
+      .container,
+      .container * {
+        box-sizing: border-box;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        /* height: 100vh; */
+        /* background: #f4f7ff; */
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: #ffffff;
+        /* max-width: 612px; */
+        height: max-content;
+        padding: 40px;
+      }
+      .sign-text {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+      }
+      .text1 {
+        color: #000;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .text2 {
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+      }
+      .masu-title {
+        margin: 40px 0px 0px 0px;
+        width: 350px;
+      }
+      .label-data {
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .value-data {
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+      }
+      .white {
+        flex-shrink: 0;
+        width: 131.52px;
+        height: 26px;
+      }
+      .title-logo {
+        color: var(--Neutral-color-800, #2f3238);
+        /* Caption/Bold 12pt */
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 133.333% */
+        text-align: left;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .subtitle-logo {
+        color: #000;
+
+        /* Caption/Regular 12pt */
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+        text-align: left;
+      }
+      .contact-logo {
+        color: #000;
+
+        /* Caption/Bold 12pt */
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 133.333% */
+        text-align: left;
+      }
+      .masu-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 266px;
+      }
+      .masu-info2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      .order-subtitle {
+        color: #0f1218;
+        /* Caption/Bold 14pt */
+        font-family: "Work Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+        text-align: left;
+      }
+      .rfc-masu-0256087-sd {
+        color: #000000;
+        text-align: left;
+      }
+      .contact-number {
+        color: #000000;
+        text-align: left;
+      }
+      .order-title {
+        color: #000;
+        /* Caption/Bold 16pt */
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 125% */
+        text-align: left;
+      }
+      .order-number {
+        color: #000;
+        margin-top: 40px;
+        /* Caption/Bold 20pt */
+        font-family: "Work Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 120% */
+        text-align: right;
+        width: 100%;
+      }
+
+      .frame {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .table {
+        background: #ffffff;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .frame-divider {
+        align-self: stretch;
+        flex-shrink: 0;
+        height: 0px;
+        overflow: visible;
+      }
+      .table2 {
+        background: var(--bandw-white, #ffffff);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 100%;
+      }
+      .title {
+        background-color: #335edf;
+        padding: 4px 16px 4px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 100%;
+      }
+      .th {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 32px;
+      }
+      .label {
+        color: #f4f7ff;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px;
+      }
+      .th2 {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+      .th3 {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .frame-divider2 {
+        align-self: stretch;
+        flex-shrink: 0;
+        height: 0px;
+        overflow: visible;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .item {
+        background: #f4f7ff;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .tr {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 32px;
+      }
+      .label-products {
+        color: #0f1218;
+        text-align: center;
+        /* Footnote/Regular 10pt */
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 140% */
+        flex: 1;
+      }
+      .tr2 {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+      .tr3 {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .item2 {
+        background: var(--primary-50, #e3f2ff);
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .total-amount {
+        padding: 8px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .extra {
+        padding: 0px 8px 0px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+      }
+      .item3 {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: flex-end;
+        align-self: stretch;
+        flex-shrink: 0;
+        height: 14px;
+      }
+      .section {
+        display: flex;
+        justify-content: space-between;
+      }
+      .result-products {
+        color: #0f1218;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 140% */
+        text-align: left;
+        align-self: stretch;
+        width: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      ._1-459-380-00-mxn {
+        color: #0f1218;
+        text-align: right;
+        align-self: stretch;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .result-label-price {
+        color: #0f1218;
+        text-align: right;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 140% */
+      }
+
+      .result-label {
+        color: #0f1218;
+        font-family: "Work Sans";
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+      }
+
+      .result-label-negrilla1 {
+        color: #0f1218;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px;
+        text-align: right;
+        align-self: stretch;
+        width: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .result-label-negrilla2 {
+        color: #0f1218;
+        text-align: right;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px;
+      }
+      .result-label-negrilla3 {
+        color: #0f1218;
+        font-family: "Work Sans";
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 12px;
+        text-align: right;
+      }
+      ._500-00-mxn {
+        color: #0f1218;
+        text-align: right;
+        align-self: stretch;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      ._500-00-mxn-span {
+        color: #0f1218;
+        font-family: "Work Sans";
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+      ._1-464-380-00-mxn {
+        color: #0f1218;
+        text-align: right;
+        align-self: stretch;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      ._234-300-80-mxn {
+        color: #0f1218;
+        text-align: right;
+        align-self: stretch;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .frame-divider3 {
+        align-self: stretch;
+        flex-shrink: 0;
+        height: 0px;
+        overflow: visible;
+      }
+      .monto-total {
+        padding: 0px 8px 8px 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-self: stretch;
+      }
+      .monto-total2 {
+        color: #335edf;
+        /* Caption/Bold 12pt */
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 133.333% */
+        text-align: left;
+        width: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .framt-rest-total {
+        color: #335edf;
+        text-align: right;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .monto-total-price {
+        color: #335edf;
+        text-align: right;
+        /* Caption/Bold 12pt */
+        font-family: "Work Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 133.333% */
+      }
+      .monto-total-price2 {
+        color: #335edf;
+        /* Footnote/Bold 10pt */
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px;
+      }
+      .image {
+        border-radius: 8px;
+        width: 266px;
+        height: 84px;
+        object-fit: cover;
+        margin-top: 20px;
+      }
+      .icon-table {
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+      }
+      .card {
+        background: #e3f2ff;
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      .frame-1000000810 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .labels {
+        padding: 0px 16px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+      }
+      .text-final {
+        color: #2f3238;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+      }
+      .text-final-saved {
+        color: #335edf;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+      }
+      ._4500-00-mxn {
+        color: #0f1218;
+        text-align: right;
+        align-self: stretch;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="section">
+          <div class="masu-title">
+            <div class="white">
+              <div class="frame">
+                <svg
+                  width="132"
+                  height="26"
+                  viewBox="0 0 132 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.932 -0.000305176C35.1221 -0.000305176 37.6488 0.926569 39.5123 2.78032C41.3758 4.63406 42.3076 7.41469 42.3076 11.1222V25.667H36.3855V11.8827C36.3855 9.66453 35.8959 7.99299 34.9168 6.86807C33.9376 5.74314 32.5321 5.18068 30.7002 5.18068C28.7104 5.18068 27.1154 5.83821 25.9152 7.15326C24.7149 8.46831 24.1148 10.3458 24.1148 12.7858V25.667H18.1927V11.8827C18.1927 9.66453 17.7032 7.99299 16.724 6.86807C15.7449 5.74314 14.3394 5.18068 12.5075 5.18068C10.4861 5.18068 8.88317 5.83029 7.69874 7.12949C6.51432 8.4287 5.92211 10.3141 5.92211 12.7858V25.667H0V0.284887H5.63785V3.51706C6.58539 2.3763 7.76981 1.50487 9.19112 0.902803C10.6124 0.300731 12.1917 -0.000305176 13.9288 -0.000305176C15.8239 -0.000305176 17.5058 0.356184 18.9744 1.06916C20.4431 1.78214 21.6039 2.83577 22.4566 4.23004C23.4989 2.89915 24.8413 1.86137 26.4837 1.1167C28.1261 0.372029 29.9422 -0.000305176 31.932 -0.000305176ZM68.9334 0.284887H74.8555V25.667H69.2176V22.3873C68.2385 23.5914 67.0304 24.4945 65.5933 25.0966C64.1562 25.6987 62.5691 25.9997 60.8319 25.9997C58.3683 25.9997 56.1653 25.461 54.2229 24.3836C52.2804 23.3062 50.7643 21.7852 49.6747 19.8205C48.585 17.8559 48.0402 15.5743 48.0402 12.9759C48.0402 10.3775 48.585 8.1039 49.6747 6.15509C50.7643 4.20628 52.2804 2.69318 54.2229 1.61578C56.1653 0.538391 58.3683 -0.000305176 60.8319 -0.000305176C62.4743 -0.000305176 63.9825 0.284888 65.3564 0.855272C66.7303 1.42566 67.9227 2.26539 68.9334 3.37447V0.284887ZM61.4952 20.9138C63.6745 20.9138 65.4749 20.1849 66.8962 18.7273C68.3175 17.2697 69.0281 15.3525 69.0281 12.9759C69.0281 10.5993 68.3175 8.68221 66.8962 7.22456C65.4749 5.76691 63.6745 5.03809 61.4952 5.03809C59.3159 5.03809 57.5234 5.76691 56.1179 7.22456C54.7124 8.68221 54.0097 10.5993 54.0097 12.9759C54.0097 15.3525 54.7124 17.2697 56.1179 18.7273C57.5234 20.1849 59.3159 20.9138 61.4952 20.9138ZM90.4425 25.9997C88.3895 25.9997 86.3839 25.7303 84.4256 25.1917C82.4674 24.653 80.9039 23.9717 79.7353 23.1478L82.0094 18.6322C83.1464 19.3927 84.5125 20.0027 86.1075 20.4622C87.7025 20.9217 89.2739 21.1514 90.8215 21.1514C94.359 21.1514 96.1277 20.2166 96.1277 18.347C96.1277 17.4598 95.6776 16.8419 94.7775 16.4933C93.8773 16.1447 92.4323 15.812 90.4425 15.4951C88.3579 15.1782 86.6602 14.8138 85.3495 14.4019C84.0387 13.9899 82.9017 13.269 81.9383 12.2392C80.975 11.2093 80.4933 9.77544 80.4933 7.93754C80.4933 5.52925 81.4961 3.6042 83.5018 2.1624C85.5074 0.720596 88.2158 -0.000305176 91.6269 -0.000305176C93.3641 -0.000305176 95.1012 0.197745 96.8384 0.593845C98.5755 0.989945 99.9968 1.52072 101.102 2.18617L98.8282 6.70171C96.6804 5.43419 94.2642 4.80043 91.5795 4.80043C89.8424 4.80043 88.5237 5.06185 87.6236 5.5847C86.7234 6.10756 86.2733 6.79677 86.2733 7.65235C86.2733 8.60299 86.755 9.27636 87.7183 9.67246C88.6816 10.0686 90.174 10.4409 92.1954 10.7895C94.2169 11.1063 95.875 11.4707 97.17 11.8827C98.465 12.2946 99.5783 12.9918 100.51 13.9741C101.442 14.9564 101.908 16.3507 101.908 18.1569C101.908 20.5335 100.881 22.4348 98.8282 23.8608C96.7752 25.2867 93.98 25.9997 90.4425 25.9997ZM125.596 0.284887H131.518V25.667H125.88V22.4348C124.933 23.5756 123.748 24.4549 122.327 25.0728C120.906 25.6907 119.374 25.9997 117.732 25.9997C114.352 25.9997 111.691 25.057 109.749 23.1715C107.806 21.2861 106.835 18.4896 106.835 14.7821V0.284887H112.757V13.9741C112.757 16.2556 113.27 17.9589 114.297 19.0838C115.323 20.2087 116.784 20.7712 118.679 20.7712C120.795 20.7712 122.477 20.1136 123.725 18.7986C124.972 17.4835 125.596 15.5902 125.596 13.1185V0.284887Z"
+                    fill="#335EDF"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="title-logo">Materias Primas Masu SA de CV</div>
+            <div class="contact-info">
+              <div class="subtitle-logo">Atención al cliente</div>
+              <div class="contact-logo">+52 55 4845 5518</div>
+            </div>
+          </div>
+          <div class="order-number">Orden: #586</div>
+        </div>
+        <div class="order-title">Confirmación de orden</div>
+        <div class="section">
+          <div class="masu-info">
+            <div class="order-subtitle">Cliente SA de CV</div>
+            <div class="label-data">Dirección completa del cliente, CDMX</div>
+            <div class="rfc-masu-0256087-sd">
+              <span>
+                <span class="label-data">RFC:</span>
+                <span class="value-data">MASU0256087SD</span>
+              </span>
+            </div>
+            <div class="contact-number">
+              <span>
+                <span class="label-data">Contacto:</span>
+                <span class="value-data">+52 319 1080 015</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="masu-info2">
+            <div class="frame">
+              <div class="label-data">Fecha de creación:</div>
+              <div class="value-data">25/Dic/2026</div>
+            </div>
+            <div class="frame">
+              <div class="label-data">Fecha de recolección:</div>
+              <div class="value-data">28-30 Dic</div>
+            </div>
+            <div class="frame">
+              <div class="label-data">Modelo de entrega:</div>
+              <div class="value-data">Recolección</div>
+            </div>
+            <div class="frame">
+              <div class="label-data">Estado del pago:</div>
+              <div class="value-data">Pendiente de pago</div>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <svg
+            class="frame-divider"
+            width="532"
+            height="1"
+            viewBox="0 0 532 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="0.5"
+              y1="0.5"
+              x2="531.5"
+              y2="0.5"
+              stroke="#ADB5BD"
+              stroke-opacity="0.72"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="table2">
+            <div class="title">
+              <div class="th">
+                <div class="label">No.</div>
+              </div>
+              <div class="th2">
+                <div class="label">Referencia</div>
+              </div>
+              <div class="th3">
+                <div class="label">
+                  Cantidad
+                  <br />
+                  (Kg)
+                </div>
+              </div>
+              <div class="th2">
+                <div class="label">
+                  Precio bruto
+                  <br />
+                  ($/Kg)
+                </div>
+              </div>
+              <div class="th2">
+                <div class="label">
+                  Precio con
+                  <br />
+                  descuento
+                  <br />
+                  ($/Kg)
+                </div>
+              </div>
+              <div class="th2">
+                <div class="label">Total ($)</div>
+              </div>
+            </div>
+            <svg class="frame-divider2" width="532" height="0"></svg>
+            <div class="content">
+              <div class="item">
+                <div class="tr">
+                  <div class="label-products">1</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">HDPE HDF8000</div>
+                </div>
+                <div class="tr3">
+                  <div class="label-products">5,124,000</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$23.57 MXN</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$22.62 MXN</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$9,916,500.00 MXN</div>
+                </div>
+              </div>
+              <div class="item2">
+                <div class="tr">
+                  <div class="label-products">1</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">PROFAX 7624</div>
+                </div>
+                <div class="tr3">
+                  <div class="label-products">924,000</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$23.57 MXN</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$22.62 MXN</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">$12,916,500.00 MXN</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-amount">
+            <div class="extra">
+              <div class="item3">
+                <div class="result-products">Total productos</div>
+                <div class="_1-459-380-00-mxn">
+                  <span>
+                    <span class="result-label-price">$1,459,380.00</span>
+                    <span class="result-label">MXN</span>
+                  </span>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="result-products">Envío Premium</div>
+                <div class="_4500-00-mxn">
+                  <span>
+                    <span class="result-label-price">$4500.00</span>
+                    <span class="result-label">MXN</span>
+                  </span>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="result-products">Maniobra</div>
+                <div class="_500-00-mxn">
+                  <span>
+                    <span class="result-label-price">$500.00</span>
+                    <span class="result-label">MXN</span>
+                  </span>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="result-label-negrilla1">Subtotal</div>
+                <div class="_1-464-380-00-mxn">
+                  <span>
+                    <span class="result-label-negrilla2">$1,464,380.00</span>
+                    <span class="result-label-negrilla3">MXN</span>
+                  </span>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="result-label-negrilla1">I.V.A.</div>
+                <div class="_234-300-80-mxn">
+                  <span>
+                    <span class="result-label-negrilla2">$234,300.80</span>
+                    <span class="result-label-negrilla3">MXN</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <svg class="frame-divider3" width="532" height="0"></svg>
+            <div class="monto-total">
+              <div class="monto-total2">Monto total</div>
+              <div class="framt-rest-total">
+                <span>
+                  <span class="monto-total-price">$587,698,680.80</span>
+                  <span class="monto-total-price2">MXN</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="icon-table">
+            <div class="card">
+              <div class="frame-1000000810">
+                <div class="main">
+                  <div class="labels">
+                    <div class="text-final">Ahorraste en esta orden</div>
+                    <div class="text-final-saved">$25,578.00 MXN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="image"
+            style="
+              background: url(https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/dragon-ball-nace-el-primer-nino-espanol-llamado-goku/66035454-1-esl-ES/Dragon-Ball-Nace-el-primer-nino-espanol-llamado-Goku.jpg)
+                center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+          <div class="sign-text">
+            <div class="text1">Confirmación por parte de</div>
+            <div class="text2">-companyName-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
