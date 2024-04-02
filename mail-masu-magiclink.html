@@ -111,6 +111,19 @@
       .bottom-text {
         padding: 0 100px 0 20px;
       }
+
+      .button-link {
+        width: 100%;
+        max-width: 327px;
+        display: inline-block;
+        width: 327px;
+        background-color: #335EDF;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+      }
       @media screen and (max-width: 480px) {
         .container {
           margin: 0;
@@ -158,9 +171,14 @@
         <p class="text">¡Queremos asegurarnos de que tienes todo lo que necesitas!</p>
     
         <div class="table-container">
-            <p class="text">Aquí está el enlace directo a tu cotización:</p>
-           
-            <a style="color: #335EDF; font-size: 16px; font-weight: 700; text-decoration: none;" href="http://" target="_blank" rel="noopener noreferrer">LINK</a>
+            <div style="width: 100%; text-align: center; margin: 10px 0;">
+              <p class="">
+                Haz clic aquí para ver tu cotización:
+              </p>
+              <a  class="button-link" href="http://" target="_blank" rel="noopener noreferrer">
+                Ver cotización
+              </a>
+            </div>
         </div>
     
         <p class="bottom-text">
