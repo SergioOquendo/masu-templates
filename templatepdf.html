@@ -381,7 +381,7 @@
         line-height: 14px; /* 140% */
         text-align: left;
         align-self: stretch;
-        width: 77px;
+        /* width: 77px; */
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -667,14 +667,7 @@
               <div class="label-data">Fecha de creación:</div>
               <div class="value-data">25/Dic/2026</div>
             </div>
-            <div class="frame">
-              <div class="label-data">Fecha de recolección:</div>
-              <div class="value-data">28-30 Dic</div>
-            </div>
-            <div class="frame">
-              <div class="label-data">Modelo de entrega:</div>
-              <div class="value-data">Recolección</div>
-            </div>
+
             <div class="frame">
               <div class="label-data">Estado del pago:</div>
               <div class="value-data">Pendiente de pago</div>
@@ -707,7 +700,10 @@
                 <div class="label">No.</div>
               </div>
               <div class="th2">
-                <div class="label">Referencia</div>
+                <div class="label">SKU</div>
+              </div>
+              <div class="th2">
+                <div class="label">REF.</div>
               </div>
               <div class="th3">
                 <div class="label">
@@ -717,23 +713,7 @@
                 </div>
               </div>
               <div class="th2">
-                <div class="label">
-                  Precio bruto
-                  <br />
-                  ($/Kg)
-                </div>
-              </div>
-              <div class="th2">
-                <div class="label">
-                  Precio con
-                  <br />
-                  descuento
-                  <br />
-                  ($/Kg)
-                </div>
-              </div>
-              <div class="th2">
-                <div class="label">Total ($)</div>
+                <div class="label">Precio</div>
               </div>
             </div>
             <svg class="frame-divider2" width="532" height="0"></svg>
@@ -743,7 +723,12 @@
                   <div class="label-products">1</div>
                 </div>
                 <div class="tr2">
-                  <div class="label-products">HDPE HDF8000</div>
+                  <div class="label-products">TEP102BKM002002P</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">
+                    Polietileno de alta densidad HDPE HDF8000
+                  </div>
                 </div>
                 <div class="tr3">
                   <div class="label-products">5,124,000</div>
@@ -751,16 +736,14 @@
                 <div class="tr2">
                   <div class="label-products">$23.57 MXN</div>
                 </div>
-                <div class="tr2">
-                  <div class="label-products">$22.62 MXN</div>
-                </div>
-                <div class="tr2">
-                  <div class="label-products">$9,916,500.00 MXN</div>
-                </div>
               </div>
+
               <div class="item2">
                 <div class="tr">
                   <div class="label-products">1</div>
+                </div>
+                <div class="tr2">
+                  <div class="label-products">TEP102BKM002002P</div>
                 </div>
                 <div class="tr2">
                   <div class="label-products">PROFAX 7624</div>
@@ -771,19 +754,13 @@
                 <div class="tr2">
                   <div class="label-products">$23.57 MXN</div>
                 </div>
-                <div class="tr2">
-                  <div class="label-products">$22.62 MXN</div>
-                </div>
-                <div class="tr2">
-                  <div class="label-products">$12,916,500.00 MXN</div>
-                </div>
               </div>
             </div>
           </div>
           <div class="total-amount">
             <div class="extra">
               <div class="item3">
-                <div class="result-products">Total productos</div>
+                <div class="result-products">Sub Total</div>
                 <div class="_1-459-380-00-mxn">
                   <span>
                     <span class="result-label-price">$1,459,380.00</span>
@@ -792,7 +769,7 @@
                 </div>
               </div>
               <div class="item3">
-                <div class="result-products">Envío Premium</div>
+                <div class="result-products">Descuentos</div>
                 <div class="_4500-00-mxn">
                   <span>
                     <span class="result-label-price">$4500.00</span>
@@ -801,7 +778,7 @@
                 </div>
               </div>
               <div class="item3">
-                <div class="result-products">Maniobra</div>
+                <div class="result-products">Total sin impuestos</div>
                 <div class="_500-00-mxn">
                   <span>
                     <span class="result-label-price">$500.00</span>
@@ -810,20 +787,11 @@
                 </div>
               </div>
               <div class="item3">
-                <div class="result-label-negrilla1">Subtotal</div>
+                <div class="result-products">Impuestos</div>
                 <div class="_1-464-380-00-mxn">
                   <span>
-                    <span class="result-label-negrilla2">$1,464,380.00</span>
-                    <span class="result-label-negrilla3">MXN</span>
-                  </span>
-                </div>
-              </div>
-              <div class="item3">
-                <div class="result-label-negrilla1">I.V.A.</div>
-                <div class="_234-300-80-mxn">
-                  <span>
-                    <span class="result-label-negrilla2">$234,300.80</span>
-                    <span class="result-label-negrilla3">MXN</span>
+                    <span class="result-label-price">$1,464,380.00</span>
+                    <span class="result-label">MXN</span>
                   </span>
                 </div>
               </div>
