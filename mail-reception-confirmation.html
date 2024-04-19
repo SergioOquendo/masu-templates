@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotización</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e4e4e4;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 80px;
+      }
+      .header table {
+            width: 100%;
+      }
+      .header-logo {
+       
+        text-align: left;
+      }
+      .header-text {
+        text-align: right;
+        font-size: 16px;
+        color: #606369;
+
+      }
+      .footer {
+        text-align: center;
+        width: 100%;
+        padding: 40px 0 72px 0;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #335EDF;
+        font-family: Helvetica;
+      }
+
+      .text {
+        font-size: 16px;
+        /* margin-bottom: 20px; */
+        color: #2F3238;
+        font-family: Helvetica;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #2F3238;
+        font-family: Helvetica;
+      }
+      .content {
+        /* padding: 20px; */
+      }
+      .order-details,
+      .contact-details {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .order-details th,
+      .order-details td {
+        border: 1px solid #ddd;
+        padding: 12px 24px;
+      }
+      .contact-details th,
+      .contact-details td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      .order-details th,
+      .contact-details th {
+      }
+      .total-row {
+        font-size: 14px;
+        text-align: end; 
+        color: #335EDF;
+        font-weight: bold;
+      }
+
+      .table-container{
+ 
+        border-radius: 8px;
+        text-align: center;
+        padding: 16px;
+        margin: 30px 0;
+      }
+      .contact-details td {
+        text-align: center;
+      }
+
+      .gradient {
+        width: 194.182px;
+        margin: 0 auto;
+        height: 3px;
+        border-radius: 80px;
+        background: linear-gradient(90deg, #00D994 -0.73%, #335EDF 99.95%);
+      }
+      .bottom-text {
+        padding: 0 100px 0 20px;
+      }
+
+      .button-link {
+        margin: 0 auto;
+    
+        max-width: 327px;
+      
+        background-color: #335EDF;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .button-link > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .button-link > a:visited {
+        color: white;
+      }
+      @media screen and (max-width: 480px) {
+        .container {
+          margin: 0;
+          padding: 20px;
+        }
+        .text {
+            padding-right: 14px;
+            margin-bottom: 25px;
+        }
+        .order-details th,
+        .order-details td {
+        padding: 12px 16px;
+        }
+
+        .bottom-text {
+            font-size: 16px;
+            padding: 0  10px 0 18px;
+        }
+        .product-image {
+          display: none;
+        }
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <table>
+          <tr>
+            <td class="header-logo">
+                <img src="https://fdvkwvvsvjtemmtiddhy.supabase.co/storage/v1/object/public/assets/img/blue.png" width="102" alt="">
+              </svg>
+            </td>
+            <td class="header-text"><a style="text-decoration: none; color: #2F3238;" href="http://www.masu.mx" target="_blank" rel="noopener noreferrer">www.masu.mx</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="content">
+        <p class="title">¡Hola, {{params.name}}!</p>
+        <p class="text">
+            ¡Buenas noticias! tu vendedor <strong>{{params.seller}}</strong> ha preparado tu nueva cuenta. Para completar tu activación, configura tu contraseña aquí:
+        </p>
+       
+    
+        <div class="table-container">
+            <div style="width: 100%; text-align: center; margin: 10px 0;">
+              <div class="button-link">
+                <a  class="" href="http://" target="_blank" rel="noopener noreferrer">
+                 Activar cuenta
+                </a>
+              </div>
+            </div>
+        </div>
+  
+        <p class="bottom-text" style="margin-bottom: 40px; margin-top: 40px;">
+           <strong "> ¡Esperamos verte pronto! </strong><br/>
+            Cordialmente, Equipo Masu
+        </p>
+        
+        <div class="footer">
+           <div class="gradient"></div>
+           <div style="margin: 24px 0;">
+           <img src="https://fdvkwvvsvjtemmtiddhy.supabase.co/storage/v1/object/public/assets/img/blue.png" width="102" alt="">
+           </div>
+        
+           <div class="">
+            <a style="margin-right: 21px; text-decoration: none;" href="https://www.facebook.com/masulatinoamerica/" target="_blank" rel="noopener noreferrer">
+                <img src="https://fdvkwvvsvjtemmtiddhy.supabase.co/storage/v1/object/public/assets/img/Facebook.png" width="20" height="20" alt="">
+            </a>
+            <a style="margin-left: 21px; text-decoration: none;" href="https://www.linkedin.com/company/masu-la/" target="_blank" rel="noopener noreferrer">
+                <img  src="https://fdvkwvvsvjtemmtiddhy.supabase.co/storage/v1/object/public/assets/img/Linkedin.png" width="20" height="20" alt="">
+            </a>
+            
+           <div style="font-size: 10px; margin-top: 40px;">
+               <p style="margin-bottom: 20px;">¿Necesitas ayuda o tienes alguna pregunta sobre tu pedido?</p>
+               <p style="margin-bottom: 20px;"> Escríbenos a comercial@masu.mx <br> O contáctanos vía WhatsApp al +52 55 1434 6197.</p>
+               <p>Materias Primas masu SA de CV</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
