@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "Work Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+      .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+      }
+      .pdf,
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f4f7ff]">
+    <div class="flex flex-col items-center justify-center m-10 gap-5">
+      <h1 class="text-3xl font-bold text-[#335edf]">Order confirmation PDF</h1>
+      <!-- <object
+      class="pdf"
+      data="https://masu-bucket-staging.s3.amazonaws.com/tenants/masu/orders/test/confirmation/6df2c5d24db8ac3302082cea5b1a462b2fd6148eede1fe78e1a0987e50f8055e.pdf"
+      style="pointer-events: none"
+      width="800"
+      height="500"
+    ></object> -->
+
+      <div id="message-container">Cargando PDF...</div>
+      <div
+        class="w-full h-[300px] border bg-white"
+        id="pdf-preview-container"
+      ></div>
+    </div>
+
+    <script>
+      fetchPDF();
+      async function fetchPDF() {
+        try {
+          document.getElementById("message-container").innerText =
+            "Cargando PDF...";
+
+          const response = await fetch(
+            "https://masu-bucket-staging.s3.amazonaws.com/tenants/masu/orders/test/confirmation/6df2c5d24db8ac3302082cea5b1a462b2fd6148eede1fe78e1a0987e50f8055e.pdf"
+          );
+
+          if (!response.ok) {
+            throw new Error("Error al obtener el PDF.");
+          }
+
+          console.log(response);
+          document.getElementById("message-container").innerText =
+            "PDF cargado correctamente";
+        } catch (error) {
+          console.error("Error:", error);
+
+          document.getElementById("message-container").innerText =
+            "Error al cargar el PDF";
+        }
+      }
+    </script>
+  </body>
+</html>
